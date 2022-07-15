@@ -432,6 +432,12 @@ else()
     set(OPTIONS "${OPTIONS} --disable-libx265")
 endif()
 
+if("xcb" IN_LIST FEATURES)
+    set(OPTIONS "${OPTIONS} --enable-xcb")
+else()
+    set(OPTIONS "${OPTIONS} --disable-xcb")
+endif()
+
 if("xml2" IN_LIST FEATURES)
     set(OPTIONS "${OPTIONS} --enable-libxml2")
 else()
