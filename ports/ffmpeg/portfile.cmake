@@ -433,9 +433,9 @@ else()
 endif()
 
 if("xcb" IN_LIST FEATURES)
-    set(OPTIONS "${OPTIONS} --enable-xcb")
+    set(OPTIONS "${OPTIONS} --enable-libxcb")
 else()
-    set(OPTIONS "${OPTIONS} --disable-xcb")
+    set(OPTIONS "${OPTIONS} --disable-libxcb")
 endif()
 
 if("xml2" IN_LIST FEATURES)
